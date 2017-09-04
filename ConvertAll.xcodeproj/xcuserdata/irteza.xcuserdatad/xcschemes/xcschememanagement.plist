@@ -7,7 +7,20 @@
 		<key>ConvertAll.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F5F5C9591F5A7EF900BCC247</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5F5C96D1F5A7EF900BCC247</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
