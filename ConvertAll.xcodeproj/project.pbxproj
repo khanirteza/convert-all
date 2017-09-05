@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		47BBB83923D17AC96DB1F628 /* Pods_ConvertAllTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE888753A4FD4BF8B059C27B /* Pods_ConvertAllTests.framework */; };
 		6E3EBB32E0EB70ADD799F724 /* Pods_ConvertAll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DF46784A77B646E477FF13 /* Pods_ConvertAll.framework */; };
-		F56B9C881F5B4A7E0012F306 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B9C871F5B4A7E0012F306 /* ContainerViewController.swift */; };
-		F5BAE35C1F5B3FDF00D6AC8F /* MeasurementSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BAE35B1F5B3FDF00D6AC8F /* MeasurementSelectionViewController.swift */; };
+		F56B9C8C1F5D8AC30012F306 /* StoredMeasurementModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = F56B9C8B1F5D8AC30012F306 /* StoredMeasurementModel.plist */; };
+		F56B9C8E1F5DA03E0012F306 /* ConverterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B9C8D1F5DA03E0012F306 /* ConverterModel.swift */; };
+		F56B9C901F5DF6290012F306 /* ConverterSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B9C8F1F5DF6290012F306 /* ConverterSelectionCell.swift */; };
+		F5BAE35C1F5B3FDF00D6AC8F /* ConverterSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BAE35B1F5B3FDF00D6AC8F /* ConverterSelectionViewController.swift */; };
+		F5C21F931F5E4F2E00E1BE26 /* UnitConverterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C21F921F5E4F2E00E1BE26 /* UnitConverterCell.swift */; };
 		F5F5C95E1F5A7EF900BCC247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F5C95D1F5A7EF900BCC247 /* AppDelegate.swift */; };
 		F5F5C9601F5A7EF900BCC247 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F5C95F1F5A7EF900BCC247 /* ConverterViewController.swift */; };
 		F5F5C9631F5A7EF900BCC247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F5C9611F5A7EF900BCC247 /* Main.storyboard */; };
@@ -36,8 +39,11 @@
 		CE888753A4FD4BF8B059C27B /* Pods_ConvertAllTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvertAllTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DD8AA1E37660023C7703CC /* Pods-ConvertAllTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvertAllTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConvertAllTests/Pods-ConvertAllTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9DF46784A77B646E477FF13 /* Pods_ConvertAll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvertAll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F56B9C871F5B4A7E0012F306 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		F5BAE35B1F5B3FDF00D6AC8F /* MeasurementSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementSelectionViewController.swift; sourceTree = "<group>"; };
+		F56B9C8B1F5D8AC30012F306 /* StoredMeasurementModel.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = StoredMeasurementModel.plist; sourceTree = "<group>"; };
+		F56B9C8D1F5DA03E0012F306 /* ConverterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterModel.swift; sourceTree = "<group>"; };
+		F56B9C8F1F5DF6290012F306 /* ConverterSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterSelectionCell.swift; sourceTree = "<group>"; };
+		F5BAE35B1F5B3FDF00D6AC8F /* ConverterSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterSelectionViewController.swift; sourceTree = "<group>"; };
+		F5C21F921F5E4F2E00E1BE26 /* UnitConverterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverterCell.swift; sourceTree = "<group>"; };
 		F5F5C95A1F5A7EF900BCC247 /* ConvertAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvertAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F5C95D1F5A7EF900BCC247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5F5C95F1F5A7EF900BCC247 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +96,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F56B9C8A1F5D8A500012F306 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F56B9C8B1F5D8AC30012F306 /* StoredMeasurementModel.plist */,
+				F56B9C8D1F5DA03E0012F306 /* ConverterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F5BAE3551F5B208300D6AC8F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,8 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				F5F5C95F1F5A7EF900BCC247 /* ConverterViewController.swift */,
-				F5BAE35B1F5B3FDF00D6AC8F /* MeasurementSelectionViewController.swift */,
-				F56B9C871F5B4A7E0012F306 /* ContainerViewController.swift */,
+				F5BAE35B1F5B3FDF00D6AC8F /* ConverterSelectionViewController.swift */,
+				F56B9C8F1F5DF6290012F306 /* ConverterSelectionCell.swift */,
+				F5C21F921F5E4F2E00E1BE26 /* UnitConverterCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				F5BAE3551F5B208300D6AC8F /* Supporting Files */,
+				F56B9C8A1F5D8A500012F306 /* Model */,
 				F5BAE3571F5B228800D6AC8F /* Controller */,
 				F5BAE3561F5B209800D6AC8F /* View */,
 			);
@@ -247,6 +264,7 @@
 			files = (
 				F5F5C9681F5A7EF900BCC247 /* LaunchScreen.storyboard in Resources */,
 				F5F5C9651F5A7EF900BCC247 /* Assets.xcassets in Resources */,
+				F56B9C8C1F5D8AC30012F306 /* StoredMeasurementModel.plist in Resources */,
 				F5F5C9631F5A7EF900BCC247 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,8 +377,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5F5C9601F5A7EF900BCC247 /* ConverterViewController.swift in Sources */,
-				F5BAE35C1F5B3FDF00D6AC8F /* MeasurementSelectionViewController.swift in Sources */,
-				F56B9C881F5B4A7E0012F306 /* ContainerViewController.swift in Sources */,
+				F56B9C8E1F5DA03E0012F306 /* ConverterModel.swift in Sources */,
+				F5C21F931F5E4F2E00E1BE26 /* UnitConverterCell.swift in Sources */,
+				F5BAE35C1F5B3FDF00D6AC8F /* ConverterSelectionViewController.swift in Sources */,
+				F56B9C901F5DF6290012F306 /* ConverterSelectionCell.swift in Sources */,
 				F5F5C95E1F5A7EF900BCC247 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
